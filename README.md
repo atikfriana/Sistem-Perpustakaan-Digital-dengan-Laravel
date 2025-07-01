@@ -1,2 +1,10 @@
-# Sistem-Perpustakaan-Digital-dengan-Laravel
-Membuat aplikasi perpustakaan berbasis web menggunakan Laravel dan Blade template dengan integrasi fitur mobile-friendly. Proyek ini mencakup autentikasi, peminjaman buku, serta riwayat peminjaman. Saya belajar mengatur routing, layout, dan membuat halaman interaktif yang responsif untuk web dan mobile sesuai tugas kuliah.
+📚 Sistem Perpustakaan Digital dengan Laravel
+Mata Kuliah: Integrasi Aplikasi dan Informasi
+
+Membuat aplikasi perpustakaan berbasis web menggunakan Laravel dan Blade Template dengan integrasi fitur mobile-friendly. Proyek ini mencakup:
+🔐 Autentikasi (login/register untuk user dan admin)
+📖 Peminjaman & pemesanan buku
+🕓 Riwayat peminjaman
+⚙️ Pengelolaan data buku, kategori, dan pengguna oleh admin
+
+Saya belajar mengatur routing, membuat layout modular, serta membangun halaman yang interaktif dan responsif untuk digunakan di platform web maupun mobile, sesuai dengan tugas dari mata kuliah ini.
