@@ -1,0 +1,86 @@
+📚 Perpus Mobile & Web - Laravel + Mobile Integration
+Sistem perpustakaan digital terintegrasi dengan tiga antarmuka utama:
+
+🌐 Web Admin (Super Admin Panel)
+
+🌐 Web Publik (Perpustakaan Online - tanpa login)
+
+📱 Aplikasi Mobile (User/Anggota)
+
+⚙️ Setup Proyek
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini secara lokal:
+
+1. Aktifkan XAMPP
+Pastikan Apache dan MySQL dalam kondisi menyala.
+
+2. Buat Database
+Masuk ke phpMyAdmin dan buat database dengan nama:
+sql
+Copy
+Edit
+perpus_mobile
+
+3. Import Database
+Import file .sql yang tersedia di dalam folder .rar yang disediakan (/database atau sejenisnya).
+
+4. Buka Proyek via VS Code
+Arahkan folder proyek ke dalam Visual Studio Code.
+
+5. Jalankan Perintah di Terminal
+Hubungkan Storage:
+bash
+Copy
+Edit
+php artisan storage:link
+Jalankan Vite (Dev Server untuk Frontend):
+bash
+Copy
+Edit
+npm run dev
+Jalankan Laravel Server:
+bash
+Copy
+Edit
+php artisan serve
+
+🔐 Informasi Login
+Email	Password	Role
+112@gmail.com	123456	Admin
+113@gmail.com	12345678	User
+
+🧭 Akses dan Hak Pengguna
+👤 User (Anggota)
+Hanya dapat melakukan Register & melihat dashboard publik dari web.
+
+Fokus penggunaan adalah melalui aplikasi mobile.
+
+Di aplikasi mobile, user dapat:
+Melihat daftar buku
+Melakukan peminjaman
+Melakukan pemesanan
+
+🛠️ Admin (Super Admin)
+Mengakses panel admin via Web Admin
+Memiliki akses penuh terhadap semua fitur:
+CRUD data buku
+Kelola user
+Kelola peminjaman dan kategori
+Notifikasi, favorit, dan fitur lainnya
+
+🧩 Struktur Sistem
+Web Admin (/admin)
+Fokus: Manajemen sistem (super admin)
+Wajib login
+Web Publik (/)
+Fokus: Perpustakaan online yang bisa diakses umum tanpa login
+Mobile App (Android/iOS via API)
+Fokus: User/anggota
+Menggunakan fitur login, pinjam buku, pesan, dll.
+
+📌 Catatan Tambahan
+Pastikan .env sudah dikonfigurasi dengan benar (database, storage, dll).
+Jalankan composer install dan npm install jika pertama kali clone repo.
+Untuk API, bisa ditambahkan rute khusus /api jika belum tersedia.
+
+👨‍💻 Kontribusi
+Silakan fork repo ini dan ajukan pull request jika ingin menambahkan fitur atau memperbaiki bug.📚 Perpus Mobile & Web - Laravel + Mobile Integration
